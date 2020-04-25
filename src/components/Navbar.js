@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 
-
 class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -14,10 +13,10 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a className="navbar-brand" href="/">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <Link className="navbar-brand" to="/">
                         FIFA-WWC
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -27,13 +26,13 @@ class Navbar extends Component {
                                 <Link className="nav-link" activeclassname="active" to="/">HOME</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeclassname="active" to="/">MATCHES</Link>
+                                <Link className="nav-link" activeclassname="active" to="/matches">MATCHES</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeclassname="active" to="/">GROUPS</Link>
+                                <Link className="nav-link" activeclassname="active" to="/groups">GROUPS</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" activeclassname="active" to="/">TEAMS</Link>
+                                <Link className="nav-link" activeclassname="active" to="/teams">TEAMS</Link>
                             </li>
                         </ul>
                     </div>

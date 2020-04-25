@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class Home extends Component {
+class Teams extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,13 +12,12 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {/* <img style={{ height: "100%", width: "100%" }} src={dashboardImage} alt="display" /> */}
                 <div className="text-center">
-                    <p className="dashboard-content">Home</p>
+                    <p className="dashboard-content">Teams</p>
                 </div>
             </div>
         );
     }
 }
 
-export default Home;
+export default Teams;
