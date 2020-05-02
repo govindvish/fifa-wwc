@@ -6,3 +6,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.card-matches a{
+    text-decoration: none;
+}
+
+.card-groups a{
+    text-decoration: none;
+}
+
+.card-teams a{
+    text-decoration: none;
+}
+
+.transition-effect {
+    transition: all 0.6s;
+}

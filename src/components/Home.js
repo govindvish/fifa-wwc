@@ -1,20 +1,52 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            styleClass: ''
         }
+    }
+
+    addStyleClass = (styleState) => {
+        this.setState({
+            styleClass: styleState
+        })
+    }
+
+    removeStyleClass = () => {
+        this.setState({
+            styleClass: ''
+        })
     }
 
     render() {
         return (
-            <div>
-                {/* <img style={{ height: "100%", width: "100%" }} src={dashboardImage} alt="display" /> */}
-                <div className="text-center">
-                    <p className="dashboard-content">Home</p>
+            <div className="container">
+                <div className="row align-items-center" style={{ height: 80 + 'vh' }}>
+                    <div className="col-4 card-matches" onMouseOver={() => this.addStyleClass('matches')} onMouseOut={this.removeStyleClass}>
+                        <Link to='/matches'>
+                            <div className={this.state.styleClass === 'matches' ? "card bg-info p-5 text-center text-white transition-effect" : "card bg-light p-5 text-center text-dark"}>
+                                <h1>Matches</h1>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-4 card-groups" onMouseOver={() => this.addStyleClass('groups')} onMouseOut={this.removeStyleClass}>
+                        <Link to='/groups'>
+                            <div className={this.state.styleClass === 'groups' ? "card bg-warning p-5 text-center text-white transition-effect" : "card bg-light p-5 text-center text-dark"}>
+                                <h1>Groups</h1>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-4 card-teams" onMouseOver={() => this.addStyleClass('teams')} onMouseOut={this.removeStyleClass}>
+                        <Link to='/teams'>
+                            <div className={this.state.styleClass === 'teams' ? "card bg-danger p-5 text-center text-white transition-effect" : "card bg-light p-5 text-center text-dark"}>
+                                <h1>Teams</h1>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );
