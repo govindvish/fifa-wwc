@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import itemsReducer from './itemsReducer';
+import teamReducer from './teamReducer';
 
 const rootReducer = combineReducers({
-    item: itemsReducer
+    team: teamReducer
 });
 
 export default rootReducer;

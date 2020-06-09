@@ -1,5 +1,5 @@
 export default {
-    list: {
-        items: []
+    team: {
+        teamList: {}
     }
 }
