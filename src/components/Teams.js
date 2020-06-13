@@ -37,8 +37,9 @@ class Teams extends Component {
             )
         }
         return (
-            <div className="container-fluid">
-                <div className="row my-5">
+            <div className="container-fluid py-5">
+                <h1 className="text-center font-weight-light pb-5">Teams</h1>
+                <div className="row">
                 {
                     (this.props.teamData.teamList || []).map(data => 
                         <div className="col-md-4 card-container mb-4" key={data.id} onMouseOver={() => this.addStyleClass(data.country)} onMouseOut={this.removeStyleClass}>

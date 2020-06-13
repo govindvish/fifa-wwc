@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+import { groupList } from '../store/actions/groupActions';
+import GroupTable from './groupTable/GroupTable';
 
 
 class Groups extends Component {
@@ -9,15 +14,23 @@ class Groups extends Component {
         }
     }
 
+    componentDidMount() {
+        this.props.groupList();
+    }
+
     render() {
         return (
-            <div>
-                <div className="text-center">
-                    <p className="dashboard-content">Groups</p>
-                </div>
+            <div className="container-fluid py-5">
+                <h1 className="text-center font-weight-light pb-5">Groups</h1>
+                <GroupTable  tableData={this.props.groupData.groupList} />
             </div>
         );
     }
 }
 
-export default Groups;
+
+const mapStateToProps = state => ({ groupData: state.group });
+
+const mapDispatchToProps = dispatch => bindActionCreators({ groupList }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Groups);

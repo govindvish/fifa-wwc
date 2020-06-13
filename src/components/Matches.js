@@ -11,10 +11,8 @@ class Matches extends Component {
 
     render() {
         return (
-            <div>
-                <div className="text-center">
-                    <p className="dashboard-content">Matches</p>
-                </div>
+            <div className="container-fluid py-5">
+                <h1 className="text-center font-weight-light pb-5">Matches</h1>
             </div>
         );
     }
