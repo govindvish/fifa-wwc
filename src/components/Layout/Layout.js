@@ -7,7 +7,7 @@ class Layout extends Component {
         return(
             <div>
                 <Navbar />
-                <div>
+                <div className="container-fluid pb-5">
                     {this.props.children}
                 </div>
                 <Footer />

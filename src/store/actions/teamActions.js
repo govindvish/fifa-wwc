@@ -9,7 +9,6 @@ export const teamList = () => {
             url: `${process.env.REACT_APP_API_URL}/teams/`
         })
             .then(res => {
-                console.log(res);
                 dispatch(teamListSuccess(res.data));
             })
             .catch(err => {

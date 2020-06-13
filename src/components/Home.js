@@ -26,24 +26,24 @@ class Home extends Component {
         return (
             <div className="container">
                 <div className="row align-items-center" style={{ height: 80 + 'vh' }}>
-                    <div className="col-4 card-matches" onMouseOver={() => this.addStyleClass('matches')} onMouseOut={this.removeStyleClass}>
+                    <div className="col-md-4 card-container" onMouseOver={() => this.addStyleClass('matches')} onMouseOut={this.removeStyleClass}>
                         <Link to='/matches'>
-                            <div className={this.state.styleClass === 'matches' ? "card card-bg p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
-                                <h1>Matches</h1>
+                            <div className={this.state.styleClass === 'matches' ? "card card-bg-brown p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
+                                <h1 className="font-weight-light">Matches</h1>
                             </div>
                         </Link>
                     </div>
-                    <div className="col-4 card-groups" onMouseOver={() => this.addStyleClass('groups')} onMouseOut={this.removeStyleClass}>
+                    <div className="col-md-4 card-container" onMouseOver={() => this.addStyleClass('groups')} onMouseOut={this.removeStyleClass}>
                         <Link to='/groups'>
-                            <div className={this.state.styleClass === 'groups' ? "card card-bg p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
-                                <h1>Groups</h1>
+                            <div className={this.state.styleClass === 'groups' ? "card card-bg-brown p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
+                                <h1 className="font-weight-light">Groups</h1>
                             </div>
                         </Link>
                     </div>
-                    <div className="col-4 card-teams" onMouseOver={() => this.addStyleClass('teams')} onMouseOut={this.removeStyleClass}>
+                    <div className="col-md-4 card-container" onMouseOver={() => this.addStyleClass('teams')} onMouseOut={this.removeStyleClass}>
                         <Link to='/teams'>
-                            <div className={this.state.styleClass === 'teams' ? "card card-bg p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
-                                <h1>Teams</h1>
+                            <div className={this.state.styleClass === 'teams' ? "card card-bg-brown p-5 text-center text-white transition-effect" : "card plain-card p-5 text-center text-dark"}>
+                                <h1 className="font-weight-light">Teams</h1>
                             </div>
                         </Link>
                     </div>
