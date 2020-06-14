@@ -4,5 +4,8 @@ export default {
     },
     group: {
         groupList: {}
+    },
+    matches : {
+        matchDetails: {}
     }
 }

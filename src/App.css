@@ -48,6 +48,10 @@
     color: #fff;
 }
 
+.group-table tbody tr:hover {
+    background-color: rgba(200, 90, 25, 0.1);
+}
+
 /* Footer */
 .footer {
     background: #00503c;
