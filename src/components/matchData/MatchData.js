@@ -16,6 +16,7 @@ function MatchData(props) {
                         </div>
                         <div className="col-md-10 m-auto">
                             <h3 className="font-weight-light">{data.home_team.country} {data.home_team.goals} - {data.away_team.goals} {data.away_team.country}</h3>
+                            <p>Winner - {data.winner}</p>
                         </div>
                     </div>
                 </div>

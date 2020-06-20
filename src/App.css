@@ -77,3 +77,10 @@
 .transition-effect {
     transition: all 0.5s ease-in;
 }
+
+@media screen and (max-width: 600px) {
+    .bg-match h3 {
+        font-weight: 500 !important;
+        font-size: 18px;
+    }
+  }
