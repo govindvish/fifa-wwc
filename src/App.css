@@ -80,6 +80,7 @@
 
 @media screen and (max-width: 600px) {
     .bg-match h3 {
+        margin-top: 10px;
         font-weight: 500 !important;
         font-size: 18px;
     }
